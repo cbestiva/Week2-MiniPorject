@@ -1,0 +1,7 @@
+<h1> Movie Search Results </h1>
+
+<% @movies.map do |movie| %>
+		<div>
+			<a href="/poster/<%= movie['imdbID']%> ">Title : <%= movie['Title'] %>, Year : <%= movie['Year'] %> </a>
+		</div>
+<% end %>
