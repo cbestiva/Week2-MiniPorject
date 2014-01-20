@@ -1,7 +1,14 @@
-<h1> Movie Search Results </h1>
+<title>Movie Search Results</title>
 
-<% @movies.map do |movie| %>
-		<div>
-			<a href="/poster/<%= movie['imdbID']%> ">Title : <%= movie['Title'] %>, Year : <%= movie['Year'] %> </a>
-		</div>
-<% end %>
+<div class="result_container">
+
+	<h2 class="title"> Movie Search Results </h2>
+
+	<% @movies.map do |movie| %>
+			<div class="movie_list">
+				<a href="/poster/<%= movie['imdbID']%> "><%= movie['Title'] %>
+					(<%= movie['Year'] %>)</a>
+			</div>
+	<% end %>
+
+</div>

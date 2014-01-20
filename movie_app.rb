@@ -16,7 +16,12 @@ post "/result" do
 
   movie_results = JSON.parse(response.body)
 
-  @movies = movie_results['Search'].sort_by {|movie| movie['Year']}
+  if movie_results['Response'] == "False"
+    @bad_results = true
+    redirect '/'
+  else 
+    @movies = movie_results['Search'].sort_by {|movie| movie['Year']}
+  end
 
   erb :result
 
@@ -32,5 +37,6 @@ get "/poster/:imdb" do
   erb :poster
 
 end
+
 
 

@@ -1,12 +1,38 @@
-<div class="form_container">
+<title>Welcome to Movie Search</title>
 
-	<h1> Find a Movie! </h1>
+<div class="head_container">
 
+	<header>
+		<!-- Spacing for background image to show in header -->
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</header>
+
+	<%if @bad_results%>
+	<p>Your search didn't return any results!<br>
+		Please try again</p>
+	<%end%>
+
+	<h2 class="title"> Welcome to <br> Movie Search </h2>
+	<p class="subtitle"> find all your favorite movies here </p><br>
 	<form accept-charset="UTF-8" action="/result" method="post">
 	<label for="movie">Search for:</label>
-	<input id="movie" name="movie" type="text" />
+	<input id="movie" name="movie" type="text" placeholder="Movie Title" />
 	<input name="commit" type="submit" value="Search" /> 
 	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 
-	
+
 </div>

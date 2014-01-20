@@ -1,0 +1,87 @@
+body {
+	background-color: #E8E5E4;
+
+}
+
+header {
+	background: url('/images/3dglasses.jpg') center;
+	background-size: cover;
+	margin-bottom: 0px;
+
+}
+
+.head_container {
+	text-align: center;
+	font-family: 'Gruppo', cursive;
+	font-size: 17px;
+}
+
+h2.title {
+	color: #EB1C24;
+	padding-bottom: 0px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	font-family: 'Gruppo', cursive;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+p.subtitle {
+	color: #26A9E1;
+	padding-top: 0px;
+	margin-top: 10px;
+}
+
+.result_container {
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Gruppo', cursive;
+	color: #EB1C24;
+}
+
+.movie_list {
+	text-align: center;
+	font-size: 20px;
+	padding-top: 5px;
+}
+
+.poster_container {
+	text-align: center;
+	font-family: 'Gruppo', cursive;
+	font-size: 16px;
+}
+
+h1.poster {
+	font-family: 'Gruppo', cursive;
+	font-size: 50px;
+	color: #EB1C24;
+	font-weight: bold;
+}
+
+img.poster_border {
+	border: 3px solid;
+	padding: 1px;
+}
+
+.imdb {
+	color: #26A9E1;
+	font-weight: bolder;
+	padding-top: 0px;
+	margin-bottom: 3px;
+}
+
+p {
+	font-size: 20px;
+}
+
+b.keys {
+	color: #EB1C24;
+}
+
+.left_col {
+	text-align: left;
+}
+
+.right_col {
+	text-align: left;
+}

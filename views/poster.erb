@@ -1,16 +1,40 @@
-<title> Movie Poster </title>
-<h1> Movie Poster </h1>
+<title> Movie Poster : <%=@movie['Title']%></title>
 
-<img src="<%=@movie['Poster']%>>"</img><br>
-Link to IMDB page : <a href="http://www.imdb.com/title/<%=@movie['imdbID']%>"><%=@movie['Title']%></a>
-<br>
-<br>
-Plot : <%=@movie['Plot']%><br>
-Released Year : <%=@movie['Released']%><br>
-Rated : <%=@movie['Rated']%><br>
-Runtime : <%=@movie['Runtime']%><br>
-Genre : <%=@movie['Genre']%><br>
-Director : <%=@movie['Director']%><br>
-Actors : <%=@movie['Actors']%><br>
+<div class="poster_container">
 
-<br><a href="/">New Search</a>
+	<h1 class="poster"> Movie Poster </h1>
+
+	<img class="poster_border" src="<%=@movie['Poster']%>>" >
+	<br>
+	<div class="imdb"><a href="http://www.imdb.com/title/<%=@movie['imdbID']%>" target="blank">
+	Visit IMDb page : <%=@movie['Title']%></a>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<b class="keys">Plot : </b><%=@movie['Plot']%><br>
+				<div class="left_col">
+					<div class="row">
+						<div class="left_col">
+						<div class="col-sm-4 col-sm-offset-2">
+							<b class="keys">Rated : </b><%=@movie['Rated']%><br>
+							<b class="keys">Runtime : </b><%=@movie['Runtime']%><br>
+							<b class="keys">Released : </b><%=@movie['Released']%><br></div>
+						</div>
+						<div class="right_col">
+						<div class="col-sm-6 col-sm-offset-0">
+							<b class="keys">Genre : </b><%=@movie['Genre']%><br>	
+							<b class="keys">Director : </b><%=@movie['Director']%><br>
+							<b class="keys">Actors : </b><%=@movie['Actors']%><br></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br><a href="/">New Search</a>
+	<br><br>
+
+</div>
